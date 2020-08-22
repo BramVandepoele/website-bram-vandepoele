@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #2B2B2B;
+    background-color: #E5E5E5;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu{
+    background-color: #2B2B2B;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    height: 50px;
+    padding-top: 12px;
+}
+
+.menu a{
+    color: #E5E5E5;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    color: #4DD9FF;
+}
+
+.menu a:active{
+    color: #E5E5E5;
+}
+
+.header-title{
+    color: #2B2B2B;
+    background-color: #4DD9FF;
+    min-height: 150px;
+    text-align: center;
+}
+
+.header-title h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    padding: 25px 0 20px 0;
+}
+
+.header-title p{
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+article{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+article h1{
+    font-size: 2em;
+    margin: 20px;
+}
+
+article h2{
+    margin-bottom: 20px;
+}
+
+article p{
+    margin-bottom: 20px;
+}
+article p em{
+    font-style: italic;
+    font-weight: bold;
+    display: none;
+}
+
+.about-me{
+    
+}
+
+.interest{
+    background-color: #4DD9FF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    height: 70px;
+    color: #E5E5E5;
+    background-color: #2B2B2B;
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 25px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #E5E5E5;
+}
+footer a:hover{
+    color: #4DD9FF;
+}
+
+footer a:active{
+    color: #E5E5E5;
+}
+
+.team-logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-logo img{
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    width: 300px;
+    height: auto;
+}
+
+.spotify{
+    width: 280px;
+    height: 200px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+ul {
+    list-style: none;
+}
+@media only screen and (min-width: 500px){
+    .interests-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; 
+    }
+    
+    .interest{
+        color: transparent;
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        align-items: center;
+        margin: 30px
+    }
+    .basketball{
+        background-image: url(images/basketball.svg);
+    }
+    .music{
+        background-image: url(images/music.svg);
+    }
+    .technology{
+        background-image: url(images/laptop.svg);
+    }
+    .games{
+        background-image: url(images/controller.svg);
+    }
+    .cars{
+        background-image: url(images/steering-wheel.svg);
+    }
+    .motorcycles{
+        background-image: url(images/helmet.svg);
+    }
+    
+    .snakes{
+        background-image: url(images/snake.svg);
+    }
+    .movies{
+        background-image: url(images/clapper.svg);
+    }
+    
+    .interest:hover, .interest:active{
+        color: #2B2B2B;
+        background-image: none;
+        background-color: #4DD9FF;
+    }
+    
+    article p em{
+    display: block;
+    }
+    
+    .spotify{
+    width: 350px;
+    height: 200px;
+}
+}
+
+@media only screen and (max-width: 330px){
+    .header-title h1{
+    font-size: 2em;
+    }
+}
